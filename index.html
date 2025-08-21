@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanya Keshari— Frontend Developer Intern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="backdrop"></div>
+  <nav>
+    <div class="container nav-inner">
+      <a class="logo" href="#home">
+        <div class="logo-mark"><span>TK</span></div>
+        <span>Tanya Keshari</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="btn theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <a class="btn primary" href="#" id="resumeBtn"> Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-card reveal">
+        <span class="eyebrow">👋 Hello, I'm</span>
+        <h1 class="title">Tanya Keshari</h1>
+        <p class="subtitle">Frontend Developer Intern crafting clean, accessible and responsive web experiences.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects →</a>
+          <a class="btn" href="#contact">Hire Me</a>
+        </div>
+      </div>
+      <div class="avatar reveal">
+        <img alt="Profile" src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?q=80&w=1200&auto=format&fit=crop" />
+        <div class="badge">Available for Internship</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I’m a BCA student and frontend developer intern who enjoys turning ideas into delightful UIs. I focus on semantic HTML, modern CSS, and JavaScript best practices. Exploring React, design systems, and accessibility.</p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3 / Tailwind / Bootstrap</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React Basics</li>
+      <li>Git & GitHub</li>
+      <li>REST APIs</li>
+      <li>Responsive Design</li>
+      <li>Figma (UI Design)</li>
+      <li>Accessibility (a11y)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">Bookly — Stationery Shop UI</div>
+      <div class="card">Portfolio v1</div>
+      <div class="card">Weather Mini App</div>
+      <div class="card">UI Components Library</div>
+      <div class="card">Task Tracker</div>
+      <div class="card">Responsive Landing Page</div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="container">
+    <p>© <span id="year"></span> Payal Gupta. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

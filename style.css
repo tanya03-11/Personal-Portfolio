@@ -1,0 +1,238 @@
+style.css
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* ===== Navigation ===== */
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.logo-mark {
+  background: #0077cc;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.nav-links a, .btn {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #0077cc;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #005fa3;
+}
+
+.theme-toggle {
+  background: #eee;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(135deg, #0077cc, #00c6ff);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.hero-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-card {
+  flex: 1;
+}
+
+.hero-card .title {
+  font-size: 2.5rem;
+}
+
+.hero-card .subtitle {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.avatar {
+  flex: 1;
+  position: relative;
+}
+
+.avatar img {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.avatar .badge {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background: #00c853;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+#skills li {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Contact Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #005fa3;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== Dark Mode ===== */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark nav {
+  background: #1e1e1e;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .btn.primary {
+  background: #00c6ff;
+}
+
+body.dark #skills li {
+  background: #222;
+}
